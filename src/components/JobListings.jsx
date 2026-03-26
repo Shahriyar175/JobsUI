@@ -9,7 +9,7 @@ const JobListings = ({isHome = true}) => {
 
   useEffect(()=> {
     const fetchJobs = async () => {
-      const apiUrl = isHome ? '/api/jobs?_page=1&_per_page=3' : '/api/jobs';
+      const apiUrl = isHome ? '/api/jobs?_limit=3' : '/api/jobs';
       try {
         const result = await fetch(apiUrl); 
         const data = await result.json();  
@@ -33,9 +33,8 @@ const JobListings = ({isHome = true}) => {
       
         {loading ? (<Spinner loading={loading} />) :
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          { isHome ?  jobs.data.map((job) => (<Joblisting key={job.id} job={job} />))
-                   :  jobs.map((job) => (<Joblisting key={job.id} job={job} />
-        ))}</div>
+          { jobs.map((job) => (<Joblisting key={job.id} job={job} />))}
+        </div>
         }
       
     </div>
