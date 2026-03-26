@@ -1,16 +1,75 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# JobsUI – React Job Listing Application
 
-Currently, two official plugins are available:
+A simple and clean job listing application built with **React**, **React Router**, **Axios**, and **JSON Server**.  
+This project demonstrates full CRUD operations, routing with loaders, reusable layouts, and form handling.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- View all job listings
+- View job details (with React Router loader)
+- Add a new job
+- Edit an existing job
+- Delete a job
+- Toast notifications for all actions
+- Clean component structure with layouts and pages
+- Axios-based API layer
+- JSON Server as mock backend
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **React 19**
+- **React Router 7**
+- **Axios**
+- **JSON Server**
+- **Vite**
+- **TailwindCSS (v3)**
+
+---
+
+## 📂 Project Structure
+
+src/
+├── layouts/
+│    └── MainLayout.jsx
+├── pages/
+│    ├── HomePage.jsx
+│    ├── JobsPage.jsx
+│    ├── JobPage.jsx
+│    ├── AddJobPage.jsx
+│    ├── EditJobPage.jsx
+│    └── NotFound.jsx
+├── components/
+├── App.jsx
+└── main.jsx
+
+
+---
+
+## ⚙️ API Endpoints (JSON Server)
+
+GET    /api/jobs
+GET    /api/jobs/:id
+POST   /api/jobs
+PUT    /api/jobs/:id
+DELETE /api/jobs/:id
+
+
+---
+
+## ▶️ Running the Project
+
+### 1. Install dependencies
+npm install
+
+### 2. Start JSON Server
+npm run server
+
+### 3. Start Vite dev server
+npm run dev
+
