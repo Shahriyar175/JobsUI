@@ -34,19 +34,21 @@ This project demonstrates full CRUD operations, routing with loaders, reusable l
 
 ## 📂 Project Structure
 
+<pre>
 src/
 ├── layouts/
-│    └── MainLayout.jsx
+│   └── MainLayout.jsx
 ├── pages/
-│    ├── HomePage.jsx
-│    ├── JobsPage.jsx
-│    ├── JobPage.jsx
-│    ├── AddJobPage.jsx
-│    ├── EditJobPage.jsx
-│    └── NotFound.jsx
+│   ├── HomePage.jsx
+│   ├── JobsPage.jsx
+│   ├── JobPage.jsx
+│   ├── AddJobPage.jsx
+│   ├── EditJobPage.jsx
+│   └── NotFound.jsx
 ├── components/
 ├── App.jsx
 └── main.jsx
+</pre>
 
 
 ---
